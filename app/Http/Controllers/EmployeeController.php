@@ -105,5 +105,7 @@ class EmployeeController extends Controller
     {
         $pekerja = employee::find($id);
         $pekerja->delete();
+
+        return response()->json(null);
     }
 }
